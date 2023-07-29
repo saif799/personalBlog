@@ -1,3 +1,5 @@
+import Blog from "@/components/Blog";
+
 export default function Home() {
   return (
     <div className="mt-24">
@@ -21,6 +23,10 @@ export default function Home() {
 
       <div className="mt-14"> 
         <h2 className="font-bold text-3xl text-gray-800 -tracking-tight mb-6">Latest Blog posts</h2>
+        <main className=" p-3 flex flex-col gap-y-2 mb-10">
+          <Blog/>
+          <Blog/>
+        </main>
       </div>
     </div>
   );
