@@ -19,9 +19,9 @@ function page() {
           📰 Blog posts
         </h1>
         <BlogsContainer>
-          <Blog />
-          <Blog />
-          <Blog />
+          <Blog href="/firstPost" />
+          <Blog href="/firstPost" />
+          <Blog href="/secondPost"/>
         </BlogsContainer>
       </div>
     </div>
