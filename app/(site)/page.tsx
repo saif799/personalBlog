@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="mt-24">
       <h1 className="font-bold text-3xl text-gray-800 -tracking-tight mb-6">
-        Hi, I&quot;m Saif. I am never sleepless.
+        Hi, I&apos;m Saif. I am never sleepless.
       </h1>
       <p className="pb-3  text-gray-800 leading-6  ">
         This is where I write stuff. Abandon all hope. Leave all uncertainty of
