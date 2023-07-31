@@ -26,7 +26,8 @@ export default function RootLayout({
       <body className="border-t-8">
         <div className=" min-w-[350px] m-auto w-[97%] max-w-[850px]  h-full mt-8  ">
           <NavBar />
-          {children}
+          <div className="mt-24"> {children}</div>
+
           <Footer />
         </div>
       </body>

@@ -1,11 +1,10 @@
 import Blog from "@/components/Blog";
+import BlogsContainer from "@/components/BlogsContainer";
 
 export default function Home() {
   return (
-    <div className="mt-24">
-      <h1 className="font-bold text-3xl text-gray-800 -tracking-tight mb-6">
-        Hi, I&apos;m Saif. I am never sleepless.
-      </h1>
+    <div>
+      <h1>Hi, I&apos;m Saif. I am never sleepless.</h1>
       <p className="pb-3  text-gray-800 leading-6  ">
         This is where I write stuff. Abandon all hope. Leave all uncertainty of
         my future. And dump all multimillion imaginary ideas.
@@ -25,10 +24,10 @@ export default function Home() {
         <h2 className="font-bold text-3xl text-gray-800 -tracking-tight mb-6">
           Latest Blog posts
         </h2>
-        <main className=" p-3 flex flex-col gap-y-2 mb-10">
+        <BlogsContainer>
           <Blog href="/firstPost" />
           <Blog href="/secondPost" />
-        </main>
+        </BlogsContainer>
       </div>
     </div>
   );
