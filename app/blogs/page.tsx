@@ -18,11 +18,7 @@ function page() {
         <h1 className="font-bold text-3xl text-gray-800 -tracking-tight mb-6">
           📰 Blog posts
         </h1>
-        <BlogsContainer>
-          <Blog href="/firstPost" />
-          <Blog href="/firstPost" />
-          <Blog href="/secondPost"/>
-        </BlogsContainer>
+        <BlogsContainer />
       </div>
     </div>
   );

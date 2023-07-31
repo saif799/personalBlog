@@ -2,8 +2,10 @@ import Link from "next/link";
 
 interface BlogProps {
   href: string;
+  title: string;
+  date: string;
 }
-function Blog({ href }: BlogProps) {
+function Blog({ href, title, date }: BlogProps) {
   return (
     <Link href={href}>
       <div className="flex hover:bg-gray-100  w-full h-20 rounded-md ">
@@ -12,9 +14,9 @@ function Blog({ href }: BlogProps) {
           <div>
             <div className="text-xl  text-gray-800 -tracking-tight font-bold">
               {" "}
-              the first blog i have{" "}
+             {title}
             </div>
-            <h3>2023-07-31</h3>
+            <h3>{date}</h3>
           </div>
         </div>
       </div>
