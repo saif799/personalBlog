@@ -24,10 +24,7 @@ export default function Home() {
         <h2 className="font-bold text-3xl text-gray-800 -tracking-tight mb-6">
           Latest Blog posts
         </h2>
-        <BlogsContainer>
-          <Blog href="/firstPost" />
-          <Blog href="/secondPost" />
-        </BlogsContainer>
+        <BlogsContainer />
       </div>
     </div>
   );
