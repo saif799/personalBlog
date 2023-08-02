@@ -4,6 +4,7 @@ interface BlogProps {
   href: string;
   title: string;
   date: string;
+  
 }
 function Blog({ href, title, date }: BlogProps) {
   return (
@@ -14,7 +15,7 @@ function Blog({ href, title, date }: BlogProps) {
           <div>
             <div className="text-xl  text-gray-800 -tracking-tight font-bold">
               {" "}
-             {title}
+              {title}
             </div>
             <h3>{date}</h3>
           </div>

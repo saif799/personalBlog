@@ -1,15 +1,17 @@
+import Link from "next/link";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 
 export async function generateStaticParams() {
   const paths = getAllPostIds();
   return paths;
 }
+
 interface postParams {
   params: { id: string };
 }
+
 export default async function Post({ params }: postParams) {
   const postData = await getPostData(params.id);
-
   return (
     <>
       <div className="mb-10">
@@ -17,6 +19,14 @@ export default async function Post({ params }: postParams) {
         <h3> {postData.date}</h3>
       </div>
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      {!postData.link ? null : (
+        <div className="mt-4 ">
+          <Link className="hover:underline font-bold" href={postData.link}>
+            {" "}
+            {postData.linkTitle}{" "}
+          </Link>
+        </div>
+      )}
     </>
   );
 }

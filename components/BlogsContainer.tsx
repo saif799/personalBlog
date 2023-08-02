@@ -1,8 +1,6 @@
 import { getSortedPostsData } from "@/lib/posts";
 import Blog from "./Blog";
 
-
-
 async function BlogsContainer() {
   const allBlogs = getSortedPostsData();
   return (

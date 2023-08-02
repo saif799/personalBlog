@@ -1,6 +1,4 @@
-import Blog from "@/components/Blog";
 import BlogsContainer from "@/components/BlogsContainer";
-import { Metadata } from "next";
 import Head from "next/head";
 
 // export const metadata: Metadata = {

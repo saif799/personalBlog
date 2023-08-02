@@ -35,3 +35,17 @@ h2 {
 h3 {
   color: rgb(107 114 128);
 }
+
+code {
+  background-color: rgb(17 24 39);
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 8px; /* Optional: Add padding for spacing */
+  display: block; /* Optional: Ensures the code block starts on a new line */
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}

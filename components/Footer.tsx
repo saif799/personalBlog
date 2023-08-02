@@ -19,10 +19,10 @@ function Footer() {
           {" "}
           Contact{" "}
         </Link>
-      </div >{" "}
+      </div>{" "}
       <p className="mb-8">
-        📜 handcrafted by me and the internet, use it freely. no
-        need to be wise. fork on GitHub.
+        📜 handcrafted by me and the internet, use it freely. no need to be
+        wise. fork on GitHub.
       </p>
     </div>
   );
