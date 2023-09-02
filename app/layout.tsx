@@ -1,11 +1,13 @@
 "use client";
-import NavBar from "@/components/NavBar";
+
+import NavBar from "../components/NavBar";
 import "./globals.css";
 // import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ThemeProvider } from "@/providers/ThemeProvider";
 // import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,17 +26,19 @@ export default function RootLayout({
         <title>the title of the page </title>
       </Head> */}
 
-      <body className="border-t-8">
-        <div className=" min-w-[350px] m-auto w-[97%] max-w-[850px]  h-full mt-8  ">
-          <NavBar />
-          <div className="mt-24"> {children}</div>
-          {isHome ? null : (
-            <div className=" text-blue-500 mt-5">
-              <Link href="/">← Back to home</Link>
-            </div>
-          )}
-          <Footer />
-        </div>
+      <body>
+        <ThemeProvider attribute="class" defaultTheme="system">
+          <div className=" min-h-screen max-w-3xl mx-auto px-6 sm:px-8 mt-8  ">
+            <NavBar />
+            <div className="mt-24"> {children}</div>
+            {isHome ? null : (
+              <div className="  mt-5">
+                <Link className="text-blue-500" href="/">← Back to Home</Link>
+              </div>
+            )}
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

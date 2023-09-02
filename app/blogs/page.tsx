@@ -13,8 +13,8 @@ function page() {
         <meta property="og:title" content="My page title" key="title" />
       </Head>
       <div className="mt-24">
-        <h1 className="font-bold text-3xl text-gray-800 -tracking-tight mb-6">
-          📰 Blog posts
+        <h1 className="font-bold text-3xl  -tracking-tight mb-6">
+        Latest Writing
         </h1>
         <BlogsContainer />
       </div>

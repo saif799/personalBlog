@@ -1,7 +1,7 @@
 ---
 title: "fetching data in React before server Componants"
 date: "2023-07-31"
-link: "/firstPost"
+link: "/"
 linkTitle: "React server components "
 ---
 

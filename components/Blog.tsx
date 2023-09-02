@@ -8,12 +8,13 @@ interface BlogProps {
 }
 function Blog({ href, title, date }: BlogProps) {
   return (
+    <div className="py-3 hover:bg-secondary rounded-md">
     <Link href={href}>
-      <div className="flex hover:bg-gray-100  w-full h-20 rounded-md ">
+      <div className="flex   w-full h-20 rounded-md   ">
         {/* <div className="w-20 bg-gray-200">image here </div>{" "} */}
         <div className=" px-4 flex items-center ">
           <div>
-            <div className="text-xl  text-gray-800 -tracking-tight font-bold">
+            <div className="text-xl -tracking-tight font-bold">
               {" "}
               {title}
             </div>
@@ -22,6 +23,7 @@ function Blog({ href, title, date }: BlogProps) {
         </div>
       </div>
     </Link>
+    </div>
   );
 }
 
