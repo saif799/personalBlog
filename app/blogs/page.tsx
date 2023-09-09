@@ -14,7 +14,7 @@ function page() {
       </Head>
       <div className="mt-24">
         <h1 className="font-bold text-3xl  -tracking-tight mb-6">
-        Latest Writing
+          Latest Writing
         </h1>
         <BlogsContainer />
       </div>

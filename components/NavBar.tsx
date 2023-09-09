@@ -49,7 +49,7 @@ function NavBar() {
           <ModeToggle />
         </div>
         {!isRendered && (
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center md:hidden">
             {/* <ModeToggle /> */}
             <div
               className="space-y-[5.41px] cursor-pointer z-50 "
