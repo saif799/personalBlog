@@ -40,7 +40,7 @@ useEffect(async () => {
 });
 ```
 
-this code is very simple it declare a async function that will run every time the component re-render but we dont want that we dont want the data to be fetched every time the component re-render that's inefficient to avoid this we add an empty dependencies array to the **useEffect** hook so it only runs when the component get mounted for the first time and here is how you do that
+this code is very simple it declare an async function that will run every time the component re-render but we dont want that we dont want the data to be fetched every time the component re-render that's inefficient to avoid this we add an empty dependencies array to the **useEffect** hook so it only runs when the component get mounted for the first time and here is how you do that
 
 ```javascript
 useEffect(async () => {
