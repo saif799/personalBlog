@@ -33,7 +33,7 @@ now we want to actually get our data and then set it in the **data** using the *
 ```javascript
 useEffect(async () => {
   const result = await axios(
-    "https://hn.algolia.com/api/v1/search?query=redux"
+    "https://example.com/api/v1/search?query=redux"
   );
 
   setData(result.data);
@@ -45,7 +45,7 @@ this code is very simple it declare an async function that will run every time t
 ```javascript
 useEffect(async () => {
   const result = await axios(
-    "https://hn.algolia.com/api/v1/search?query=redux"
+    "https://example.com/api/v1/search?query=redux"
   );
 
   setData(result.data);
@@ -58,7 +58,7 @@ now we will only fetch the data once when the component is mounted but there is 
 useEffect(() => {
   const fetchData = async () => {
     const result = await axios(
-      "https://hn.algolia.com/api/v1/search?query=redux"
+      "https://example.com/api/v1/search?query=redux"
     );
 
     setData(result.data);
