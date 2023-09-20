@@ -11,7 +11,7 @@ export default function Home() {
       <p className="pb-3   leading-6  ">
         This blog is a jamstack. And yes, this is following those tacky web
         developer who think that instead of making a stupid LinkedIn bullshit,
-        it is more efficient to waste 2 weeks building a &quot;from
+        it is more efficient to waste time building a &quot;from
         scratch&quot; portfolio blog that has no visitor except the author.{" "}
       </p>
       <p className="pb-3   leading-6  ">
