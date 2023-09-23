@@ -19,11 +19,11 @@ export default function Home() {
         everything!
       </p>
 
-      <div className="mt-14">
+      <div className="mt-14 ">
         <h2 className="font-bold text-3xl  -tracking-tight mb-6">
           Latest Writing
         </h2>
-        <BlogsContainer />
+        <BlogsContainer /> 
       </div>
     </div>
   );

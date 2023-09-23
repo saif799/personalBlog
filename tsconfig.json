@@ -29,7 +29,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/[id]/page.tsx",
-    "lib/posts.ts"
+    "lib/posts.ts",
+    // "node_modules/@types"
   ],
   "exclude": ["node_modules"]
 }

@@ -17,8 +17,7 @@ function NavBar() {
 
   const routes = [
     { name: "Blog", path: "/blogs", active: pathname === "/blogs" },
-    { name: "About", path: "/", active: pathname === "/about" },
-    { name: "Contact", path: "/", active: pathname === "/contact" },
+    // { name: "About", path: "/", active: pathname === "/about" },
   ];
 
   useEffect(() => {
