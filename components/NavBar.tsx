@@ -5,14 +5,11 @@ import { usePathname } from "next/navigation";
 import { ModeToggle } from "@/components/ThemeToggle";
 
 function NavBar() {
-
-
   const pathname = usePathname();
 
   const routes = [
     { name: "Blog", path: "/blogs", active: pathname === "/blogs" },
   ];
-
 
   return (
     <header className="   flex justify-between">
