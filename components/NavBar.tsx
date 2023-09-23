@@ -17,11 +17,10 @@ function NavBar() {
         <Link href="/"> B(≖_≖ )Saif</Link>
       </div>
       <div className="flex ">
-        <div className="flex  leading-8 text-lg gap-5  ">
+        <div className="leading-8 text-lg pt-1 ">
           {routes.map((route) => (
             <Link key={route.path} href={route.path}>
-              {" "}
-              {route.name}{" "}
+              {route.name}
             </Link>
           ))}
         </div>
