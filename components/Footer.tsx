@@ -1,26 +1,26 @@
 import Link from "next/link";
-
+import { GithubIcon } from "lucide-react";
 function Footer() {
   return (
-    <div className=" h-3 border-t-2  mt-14   ">
-      <div className="flex justify-between leading-6 text-md  text-slate-400  w-32 p-8 gap-4">
+    <div className=" border-t-2  mt-14   ">
+      <div className="flex justify-between leading-6 text-md  text-slate-400  p-6 gap-4">
         {" "}
-        <Link className="hover:text-primary" href="/">
+        <Link
+          target={"_blank"}
+          className="hover:text-primary"
+          href="https://github.com/saif799"
+        >
           {" "}
-          Blog{" "}
+          <div className="flex items-center">
+            <GithubIcon size={18} />
+            <span className="px-1"> Github</span>
+          </div>
         </Link>{" "}
-        <Link className="hover:text-primary" href="/">
-          About
-        </Link>{" "}
-        <Link className="hover:text-primary" href="/">
-          {" "}
-          Contact{" "}
-        </Link>
+        <div>
+          <div>All rights reserved </div>
+          <div>Saif B &copy; 2023</div>
+        </div>
       </div>{" "}
-      {/* <p className="mb-8">
-        📜 handcrafted by me and the internet, use it freely. no need to be
-        wise. fork on GitHub.
-      </p> */}
     </div>
   );
 }

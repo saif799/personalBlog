@@ -28,24 +28,24 @@ export default App;
 
 this code will take our data that comes in the form of an array and then map over it giving us a **li** of each element in our array of data.
 
-now we want to actually get our data and then set it in the **data** using the **setData** function as we said the common way to do this is by using **useEffect** hook and here is how
+now we want to actually get our data and then set it in the **data** variable using the **setData** function as we said the common way to do this is by using **useEffect** hook and here is how
 
 ```javascript
 useEffect(async () => {
   const result = await axios(
-    "https://hn.algolia.com/api/v1/search?query=redux"
+    "https://hn.Example.com/api"
   );
 
   setData(result.data);
 });
 ```
 
-this code is very simple it declare a async function that will run every time the component re-render but we dont want that we dont want the data to be fetched every time the component re-render that's inefficient to avoid this we add an empty dependencies array to the **useEffect** hook so it only runs when the component get mounted for the first time and here is how you do that
+this code is very simple it declare an async function that will run every time the component re-render but we dont want that we dont want the data to be fetched every time the component re-render that's inefficient to avoid this we add an empty dependencies array to the **useEffect** hook so it only runs when the component get mounted for the first time and here is how you do that
 
 ```javascript
 useEffect(async () => {
   const result = await axios(
-    "https://hn.algolia.com/api/v1/search?query=redux"
+    "https://hn.Example.com/api"
   );
 
   setData(result.data);
@@ -58,7 +58,7 @@ now we will only fetch the data once when the component is mounted but there is 
 useEffect(() => {
   const fetchData = async () => {
     const result = await axios(
-      "https://hn.algolia.com/api/v1/search?query=redux"
+      "https://hn.Example.com/api"
     );
 
     setData(result.data);
