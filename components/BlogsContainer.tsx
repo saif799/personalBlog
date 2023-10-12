@@ -4,7 +4,7 @@ import Blog from "./Blog";
 async function BlogsContainer() {
   const allBlogs = getSortedPostsData();
   return (
-    <main className=" px-8 py-1 flex flex-col">
+    <main className=" px-2 py-1 flex flex-col">
       {allBlogs.map((post) => (
         <Blog
           href={post.id}

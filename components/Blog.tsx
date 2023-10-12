@@ -9,7 +9,7 @@ function Blog({ href, title, date }: BlogProps) {
   return (
     <Link href={href} className="py-3 hover:bg-secondary rounded-md ">
       <div className="flex   w-full  rounded-md   ">
-        <div className=" px-4 flex items-center ">
+        <div className=" px-3 flex items-center ">
           <div>
             <div className="text-xl -tracking-tight font-bold"> {title}</div>
             <h3>{date}</h3>

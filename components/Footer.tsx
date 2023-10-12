@@ -17,7 +17,7 @@ function Footer() {
           </div>
         </Link>{" "}
         <div>
-          <div>All rights reserved </div>
+          {/* <div>All rights reserved </div> */}
           <div>Saif B &copy; 2023</div>
         </div>
       </div>{" "}
