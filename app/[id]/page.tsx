@@ -1,9 +1,9 @@
 import Link from "next/link";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import {
-  darcula,
-  dracula,
-} from "react-syntax-highlighter/dist/esm/styles/hljs";
+// import SyntaxHighlighter from "react-syntax-highlighter";
+// import {
+//   darcula,
+//   dracula,
+// } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 
 export async function generateStaticParams() {
@@ -18,7 +18,6 @@ interface postParams {
 
 export default async function Post({ params }: postParams) {
   const postData = await getPostData(params.id);
-  const sttt = " (num) => true";
   return (
     <>
       <div className="mb-10">
@@ -28,7 +27,6 @@ export default async function Post({ params }: postParams) {
 
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 
-      
       {postData.link && (
         <div className="mt-4 ">
           <Link className="hover:underline font-bold" href={postData.link}>

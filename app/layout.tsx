@@ -2,7 +2,7 @@
 
 import NavBar from "../components/NavBar";
 import "./globals.css";
-import { Open_Sans } from "next/font/google";
+import { Open_Sans, } from "next/font/google";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -26,7 +26,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system">
           <div
             style={sans.style}
-            className=" min-h-screen max-w-3xl mx-auto px-6 sm:px-8 mt-8  "
+            className=" min-h-screen max-w-3xl mx-auto  px-4 md:px-6 sm:px-8 mt-8  "
           >
             <NavBar />
             <div className="mt-24"> {children}</div>

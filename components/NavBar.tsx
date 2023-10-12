@@ -25,7 +25,7 @@ function NavBar() {
           ))}
         </div>
 
-        <div className="px-4">
+        <div className="pl-4">
           <ModeToggle />
         </div>
       </div>
